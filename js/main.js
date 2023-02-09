@@ -50,6 +50,18 @@
       },
     },
   });
+  $(".testimonial-sldier-active").owlCarousel({
+    loop: true,
+    margin: 50,
+    responsiveClass: true,
+    nav: true,
+    items: 1,
+    dots: false,
+    navText: [
+      '<span class="fal fa-chevron-left fa-2x"></span>',
+      '<span class="fal fa-chevron-right fa-2x"></span>',
+    ],
+  });
 })(jQuery);
 
 $(document).ready(function () {
