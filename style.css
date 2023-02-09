@@ -1245,7 +1245,7 @@ p:last-child{
 .pagination ul li a {
   height: 48px;
   width: 48px;
-  font-weight: 24px;
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
