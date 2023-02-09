@@ -25,7 +25,7 @@
   });
 
   // owl-carousel
-  $(".brand-active").owlCarousel({
+  $(".x-active").owlCarousel({
     loop: true,
     margin: 50,
     responsiveClass: true,
@@ -53,6 +53,18 @@
   $(".testimonial-sldier-active").owlCarousel({
     loop: true,
     margin: 50,
+    responsiveClass: true,
+    nav: true,
+    items: 1,
+    dots: false,
+    navText: [
+      '<span class="fal fa-chevron-left fa-2x"></span>',
+      '<span class="fal fa-chevron-right fa-2x"></span>',
+    ],
+  });
+  $(".hero-slider-active").owlCarousel({
+    loop: false,
+    margin: 0,
     responsiveClass: true,
     nav: true,
     items: 1,

@@ -28,29 +28,15 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <ul class="mobile-menu">
+            <li><a class="active" href="javascript:void(0)">HOME</a></li>
+            <li><a href="#">OUR APP</a></li>
+            <li><a href="#">OUR TEAM</a></li>
+            <li><a href="blog.html">OUR BLOG</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -64,7 +50,7 @@
                 <img src="images/logo.svg" alt="" />
               </a>
 
-              <div class="main-menu">
+              <div class="main-menu d-lg-block d-none">
                 <ul>
                   <li><a class="active" href="javascript:void(0)">HOME</a></li>
                   <li><a href="#">OUR APP</a></li>
@@ -73,7 +59,13 @@
                 </ul>
               </div>
 
-              <a href="#" class="default-button">BOOK A DEMO</a>
+              <a href="#" class="default-button d-lg-flex d-none"
+                >BOOK A DEMO</a
+              >
+
+              <a href="#" class="offcanvas-open d-lg-none">
+                <i class="far fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -86,19 +78,19 @@
         <section class="hero-section">
           <div class="hero-slider">
             <div
-              class="hero-slider"
+              class="hero-slide"
               style="
                 background: url('images/heor-image.png') no-repeat center
                   center/cover;
               "
             >
               <div class="container">
-                <div class="hero-slide">
+                <div class="hero-slide__inner">
                   <div class="hero__content">
                     <h1 class="h1">
                       A <span class="color-theme1">direct-line</span> to your
-                      <br />
-                      target customers <br />
+                      <br class="d-md-block d-none" />
+                      target customers <br class="d-md-block d-none" />
                       with diabetes<span class="color-theme1">.</span>
                     </h1>
                     <p>
@@ -112,7 +104,7 @@
                     >
                   </div>
                   <div class="hero-mobile__image d-md-none">
-                    <img src="images/mobile-hero-image-glow.png" alt="" />
+                    <img src="images/mobile-hero.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -254,7 +246,8 @@
               >
                 <h2 class="h2">
                   The
-                  <span class="color-theme1">diabetes consumer</span> <br />
+                  <span class="color-theme1">diabetes consumer</span>
+                  <br class="d-md-block d-none" />
                   journey<span class="color-theme1">.</span>
                 </h2>
                 <img src="images/str-3.png" alt="" class="str-3" />
@@ -514,7 +507,7 @@
                 class="way-section__title sec-title cont-blk cont-blk--center"
               >
                 <h2 class="h2">
-                  There are two ways to <br />
+                  There are two ways to <br class="d-md-block d-none" />
                   <span class="color-theme1">work</span> with us<span
                     class="color-theme1"
                     >.</span
@@ -609,8 +602,9 @@
             <div class="opp-section__inner">
               <div class="opp-section__title cont-blk cont-blk--center">
                 <h2 class="h2">
-                  This is your <span class="color-theme1">opportunity</span> to
-                  <br class="d-md-block" />
+                  This is your <br class="d-md-none" />
+                  <span class="color-theme1">opportunity</span> to
+                  <br class="d-md-block d-none" />
                   get ahead<span class="color-theme1">.</span>
                 </h2>
                 <img src="images/str-3.png" alt="" class="str-3" />
@@ -655,9 +649,10 @@
             <div class="collaborative-section__inner">
               <div class="collaborative__title cont-blk cont-blk--center">
                 <h2 class="h2">
-                  I thought we covered this in <br class="d-md-block" />
-                  the letter from our ceo but <br class="d-md-block" />
-                  in case we need to say it <br class="d-md-block" />
+                  I thought we <br class="d-md-none" />
+                  covered this in <br class="d-md-block d-none" />
+                  the letter from our ceo but <br class="d-md-block d-none" />
+                  in case we need to say it <br class="d-md-block d-none" />
                   again. <span class="color-theme1"> We are the experts.</span>
                 </h2>
                 <img src="images/str-3.png" alt="" class="str-3" />
@@ -710,7 +705,8 @@
                 class="testimonial-section__title sec-title cont-blk cont-blk--center"
               >
                 <h2 class="h2 mb-0">
-                  If you still don’t believe us. <br />
+                  If you still don’t believe us.
+                  <br class="d-md-block d-none" />
                   <span class="color-theme1">Take it</span> from them<span
                     class="color-theme1"
                     >.</span
@@ -746,7 +742,8 @@
                     <div class="testimonial__tc__auth">
                       <h4><span class="line"></span>Carlton Bailey</h4>
                       <p class="mb-0">
-                        VP of Business Development at Total <br />
+                        VP of Business Development at Total
+                        <br class="d-md-block d-none" />
                         Medical Supply
                       </p>
                     </div>
