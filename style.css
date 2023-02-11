@@ -1204,6 +1204,7 @@ p:last-child{
   height: 380px;
   background: #fff;
   border-radius: 20px;
+  display: block;
 }
 .single-article__image img {
   border-radius: 20px;
